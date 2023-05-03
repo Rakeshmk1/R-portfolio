@@ -1,9 +1,9 @@
 import React, {  useState } from 'react'
 import Title from '../layouts/Title';
-import Education from './Education';
+// import Education from './Education';
 import Skills from './Skills';
-import Achievement from './Achievement';
-import Experience from "./Experience"
+// import Achievement from './Achievement';
+// import Experience from "./Experience"
 
 const Resume = () => {
    const [educationData, setEducationData] = useState(true);
@@ -13,11 +13,11 @@ const Resume = () => {
   return (
     <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">
       <div className="flex justify-center items-center text-center">
-        <Title title="7+ YEARS OF EXPERIENCE" des="My Resume" />
+        <Title title="" des="My Skills" />
       </div>
       <div>
-        <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
-          <li
+        <ul className=""flex justify-center items-center text-center>
+          {/* <li
             onClick={() =>
               setEducationData(true) &
               setSkillData(false) &
@@ -31,7 +31,7 @@ const Resume = () => {
             } resumeLi`}
           >
             Education
-          </li>
+          </li> */}
           <li
             onClick={() =>
               setEducationData(false) &
@@ -45,7 +45,7 @@ const Resume = () => {
           >
             Professional Skills
           </li>
-          <li
+          {/* <li
             onClick={() =>
               setEducationData(false) &
               setSkillData(false) &
@@ -59,8 +59,8 @@ const Resume = () => {
             } resumeLi`}
           >
             Experience
-          </li>
-          <li
+          </li> */}
+          {/* <li
             onClick={() =>
               setEducationData(false) &
               setSkillData(false) &
@@ -74,13 +74,13 @@ const Resume = () => {
             } resumeLi`}
           >
             Achievements
-          </li>
+          </li> */}
         </ul>
       </div>
-      {educationData && <Education />}
+      {/* {educationData && <Education />} */}
       {skillData && <Skills />}
-      {achievementData && <Achievement />}
-      {experienceData && <Experience />}
+      {/* {achievementData && <Achievement />} */}
+      {/* {experienceData && <Experience />} */}
  
     </section>
   );
